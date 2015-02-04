@@ -6,8 +6,12 @@ var server = http.createServer(app);
 
 var port = 9999;
 
+app.set('view engine','ejs');
+app.use(express.static(__dirname + '/public'));
+
 app.get('/',function(req,res){
-  res.send('Hello world');
+  // res.send('Hello world');
+  res.render('index');
 });
 
 app.get('/json', function(req, res){
