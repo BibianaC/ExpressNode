@@ -1,10 +1,6 @@
-var server=require('../server');
-
-
 
 describe('homepage',function(){
   before(function(){
-    // testserver();
     casper.start('http://localhost:9999');
   });
 
