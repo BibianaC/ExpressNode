@@ -35,6 +35,12 @@ describe("greeting", function() {
     casper.thenOpen(host + '/greetings', function() {
       expect('body').to.contain.text('Hello Bibiana');
     });
-
   });
+
+  it("should reply with jason if query", function(){
+    casper.thenOpen(host+"/json.query?name=olo",function(){
+      expect('body').to.contain.text('Hello olo');
+    });
+  });  
 });
+

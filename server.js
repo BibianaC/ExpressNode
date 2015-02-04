@@ -14,9 +14,15 @@ app.get('/',function(req,res){
   res.render('index');
 });
 
+app.get('/json.query',function(req,res){
+   res.render('jsonquery',req.query);
+});
+
 app.get('/json', function(req, res){
   res.json('Hello Jason');
 });
+
+
 
 app.get('/greetings', function(req, res) {
   res.render('greeting', {name: "Bibiana"});
