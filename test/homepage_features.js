@@ -22,3 +22,19 @@ describe('/json', function() {
     });
   });
 });
+
+describe("greeting", function() {
+
+  var host = 'http://localhost:9999'
+
+  before(function() {
+    casper.start(host);
+  });
+
+  it("Should greet you", function() {
+    casper.thenOpen(host + '/greetings', function() {
+      expect('body').to.contain.text('Hello Bibiana');
+    });
+
+  });
+});

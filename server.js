@@ -18,6 +18,10 @@ app.get('/json', function(req, res){
   res.json('Hello Jason');
 });
 
+app.get('/greetings', function(req, res) {
+  res.render('greeting', {name: "Bibiana"});
+});
+
 server.listen(port,function(){
   console.log("running server on port "+port);
 });
