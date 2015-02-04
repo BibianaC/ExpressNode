@@ -25,5 +25,11 @@
     "mocha": "^2.1.0",
     "mocha-casperjs": "^0.5.3",
     "phantomjs": "^1.9.15"
+  },
+  "dependencies": {
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "express": "^4.11.2",
+    "mocha-casperjs": "^0.5.3"
   }
 }
