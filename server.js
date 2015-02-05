@@ -6,6 +6,7 @@ var server = http.createServer(app);
 
 var port = 9999;
 
+
 var jsonReply = {
   "login": "marcinwal",
   "id": 5985784,
@@ -52,13 +53,19 @@ var jsonReply = {
 
 
 
-
 app.set('view engine','ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/',function(req,res){
   // res.send('Hello world');
   res.render('index');
+});
+
+app.get('/users/:user', function(request,response) {
+  console.log(request.params.user);
+  response.header('Access-Control-Allow-Origin','*');
+  response.header('Content-Type', 'application/json; charset=utf-8');
+  response.render(request.params.user);
 });
 
 app.get('/json/queryReply',function(req,res){
