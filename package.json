@@ -25,6 +25,7 @@
     "grunt-mocha-casperjs": "^1.4.1",
     "mocha": "^2.1.0",
     "mocha-casperjs": "^0.5.3",
+    "mustache-express": "^1.2.1",
     "phantomjs": "^1.9.15"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "casperjs": "^1.1.0-beta3",
     "ejs": "^2.2.4",
     "express": "^4.11.2",
-    "mocha-casperjs": "^0.5.3"
+    "mocha-casperjs": "^0.5.3",
+    "mustache-express": "^1.2.1"
   }
 }
