@@ -40,3 +40,30 @@ input {
 .profile img {
   width: 100%;
 }
+
+.spinner {
+  display: none;
+}
+
+.modal{
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 20px;
+  border: solid 1px #ccc;
+  background: #fff;
+  text-align: center;
+  top: 30%;
+  left: 30%;
+  font-family: Helvetica Neue;
+
+  transition: all 1s ease;
+  opacity: 0;
+  -webkit-transform: scale(0.75);
+}
+
+.modal.shown{
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+}
